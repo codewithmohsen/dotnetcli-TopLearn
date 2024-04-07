@@ -79,6 +79,9 @@ dotnet new mvc --name app --output Presentation
 
 ### Set Dependencies
 Data > Domain 
-dotnet add Data reference Domain 
-dotnet add Application reference Data 
-
+```
+[x] dotnet add Data reference Domain 
+[.] dotnet add Application reference Data
+[.] dotnet add IOC reference Application
+[x] dotnet add Presentation reference IOC
+```
