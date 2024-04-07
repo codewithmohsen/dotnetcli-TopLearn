@@ -103,3 +103,21 @@ dotnet add ApplicationLayer reference DataLayer
 dotnet add IOC referenceLayer ApplicationLayer
 dotnet add PresentationLayer reference IOCLayer
 ```
+### Subfolder
+```
+cd DomainLayer
+mkdir Entities DTOs Interfaces
+cd ..
+cd DataLayer
+mkdir Context Repositories
+cd ..
+cd ApplicationLayer
+mkdir Services Extensions Senders
+cd ..
+cd Services
+mkdir Interfaces Implementations
+cd ..
+cd ..
+cd IOCLayer
+mkdir Dipendencies
+```
