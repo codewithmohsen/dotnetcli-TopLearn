@@ -71,11 +71,14 @@ cd IOC
 rm Class1.cs
 ```
 #### 5. Create "Presentation" ASP.NET Core Web App (Model-View-Controller) template solution.
-Because of the basic way needs complex customization so just try second way here
+Because of the basic way needs complex customization so just try second way as bottom:
 ```
 cd ..
-dotnet new web --name app --output Presentation
+dotnet new mvc --name app --output Presentation
 ```
 
-
+### Set Dependencies
+Data > Domain 
+dotnet add Data reference Domain 
+dotnet add Application reference Data 
 
