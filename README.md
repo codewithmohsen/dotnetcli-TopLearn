@@ -78,10 +78,11 @@ dotnet new mvc --name app --output Presentation
 ```
 
 ### Set Dependencies
-Data > Domain 
-```
-[x] dotnet add Data reference Domain 
-[.] dotnet add Application reference Data
-[.] dotnet add IOC reference Application
-[x] dotnet add Presentation reference IOC
-```
+Presentation > IOC > Application > Data > Domain 
+- [x] ```dotnet add Data reference Domain``` 
+- [ ] ```dotnet add Application reference Data```
+error: Found a project `/Users/mohsen/personal-projects/aspdotnetcoreapi/Application/Application.csproj` but it is invalid.
+- [ ] ```dotnet add IOC reference Application```
+error: Found a project `/Users/mohsen/personal-projects/aspdotnetcoreapi/Application/Application.csproj` but it is invalid.
+- [x] ```dotnet add Presentation reference IOC```
+
