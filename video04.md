@@ -1,10 +1,10 @@
 ## Video 04 Helper
 
 ### install Microsoft.EntityFrameworkCore
+Visit https://learn.microsoft.com/en-us/ef/core/get-started/overview/install to know installation cli
 ```
 cd DataLayer
-dotnet tool search microsoft.entityframeworkcore
-dotnet add package dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer 
 ```
-now project.assets.json file is updated
-```
+now /DataLayer/project.assets.json file is updated
+
