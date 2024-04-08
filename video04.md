@@ -7,7 +7,12 @@ dotnet tool search microsoft.entityframeworkcore
 dotnet add package dotnet-ef
 ```
 bug: Package dotnet-ef 8.0.3 is not compatible with net8.0
-debug:
+first check your .net version
+```
+dotnet --version
+8.0.203                                            х HUP
+```
+Goto https://dotnet.microsoft.com/en-us/download/dotnet and download version 7!
 ```
 dotnet tool install -g dotnet-ef --version 7
 ```
