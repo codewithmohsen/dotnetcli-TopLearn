@@ -26,3 +26,14 @@ Visit https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.sqlserver/ to
 ```
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer 
 ```
+now check installed package in current folder
+```
+dotnet list package
+Project 'DataLayer' has the following package references
+   [net8.0]: 
+   Top-level Package                              Requested   Resolved
+   > Microsoft.EntityFrameworkCore                8.0.3       8.0.3   
+   > Microsoft.EntityFrameworkCore.Design         8.0.3       8.0.3   
+   > Microsoft.EntityFrameworkCore.SqlServer      8.0.3       8.0.3   
+   > Microsoft.EntityFrameworkCore.Tools          8.0.3       8.0.3
+```
