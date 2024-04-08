@@ -37,3 +37,27 @@ Project 'DataLayer' has the following package references
    > Microsoft.EntityFrameworkCore.SqlServer      8.0.3       8.0.3   
    > Microsoft.EntityFrameworkCore.Tools          8.0.3       8.0.3
 ```
+### in DataLayer/Context
+```
+cd context
+dotnet new class --name appContext
+```
+update DataLayer/Context/appContext.csh
+from
+```
+namespace DataLayer;
+
+public class appContext
+{
+
+}
+```
+to
+```
+namespace DataLayer;
+
+public class appContext:DB
+{
+
+}
+```
