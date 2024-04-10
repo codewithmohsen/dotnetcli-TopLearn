@@ -129,3 +129,4 @@ dotnet sln add ApplicationLayer/ApplicationLayer.csproj
 dotnet sln add IOCLayer/IOCLayer.csproj
 dotnet sln add dotnet sln add PresentationLayer/app.csproj 
 ```
+Now close and open vscode!
