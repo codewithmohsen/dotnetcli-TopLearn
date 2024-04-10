@@ -1,2 +1,6 @@
 # dotnetcli-TopLearn
-Mac CLI helper to deploy TopLearn course (https://toplearn.com/c/5906) in VScode 
+Mac CLI helper to deploy TopLearn course (https://toplearn.com/c/5906) in VScode
+
+### Angular (non dotnet videos):
+video06
+ؤ د
