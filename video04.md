@@ -1,10 +1,8 @@
 ## Video 04 Helper
 
 
-### in DataLayer
-```
-cd DataLayer
-```
+### in /DataLayer/
+
 #### 1. install Microsoft.EntityFrameworkCore package
 Visit https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/ to know installation cli.
 ```
@@ -37,9 +35,8 @@ Project 'DataLayer' has the following package references
    > Microsoft.EntityFrameworkCore.SqlServer      8.0.3       8.0.3   
    > Microsoft.EntityFrameworkCore.Tools          8.0.3       8.0.3
 ```
-### in DataLayer/Context
+### in /DataLayer/Context/
 ```
-cd context
 dotnet new class --name appDBContext
 ```
 update DataLayer/Context/appDBContext.cs
@@ -67,7 +64,14 @@ namespace DataLayer
     }
 }
 ```
-open PresentationLayer/Program.cs
+### in /appsettings.json
+add
+```
+ "ConnectionStrings": {
+    "AppConnectionString": "Data source=.;Initial Catalog=App_Db;Integrated Security=true;"
+  }
+```
+### in PresentationLayer/Program.cs
 after
 ```
 using DataLayer;
@@ -83,3 +87,4 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 #endregion
 ```
+done.
