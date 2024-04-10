@@ -10,7 +10,7 @@ cd DomainLayer/Entities/
 dotnet new class --name User
 ```
 #### 2. Update class
-open User.cs and updte
+open User.cs and update
 ```
 namespace DomainLayer;
 public class User
@@ -21,9 +21,7 @@ public class User
 to
 ```
 using System.ComponentModel.DataAnnotations;
-
 namespace DomainLayer;
-
 public class User
 {
     [Key]
@@ -44,7 +42,7 @@ public class User
 ```
 ##### 3. Declare in Data/Context/AppDbContext.cs
 update 
-'''
+```
 using DomainLayer;
 using Microsoft.EntityFrameworkCore;
 namespace DataLayer
@@ -57,9 +55,9 @@ namespace DataLayer
         }
     }
 }
-'''
+```
 to
-'''
+```
 using DomainLayer;
 using Microsoft.EntityFrameworkCore;
 namespace DataLayer
@@ -75,7 +73,7 @@ namespace DataLayer
         #endregion
     }
 }
-'''
+```
 ##### 4. Adds a new migration
 
 ##### Prerequisite (Install dotnet ef tool)
