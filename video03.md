@@ -103,7 +103,7 @@ dotnet add ApplicationLayer reference DataLayer
 dotnet add IOC referenceLayer ApplicationLayer
 dotnet add PresentationLayer reference IOCLayer
 ```
-### Subfolder
+### Create Subfolder
 ```
 cd DomainLayer
 mkdir Entities DTOs Interfaces
@@ -120,4 +120,12 @@ cd ..
 cd ..
 cd IOCLayer
 mkdir Dipendencies
+```
+### Add sub projects to main solution
+```
+dotnet sln add DomainLayer/DomainLayer.csproj
+dotnet sln add DataLayer/DataLayer.csproj
+dotnet sln add ApplicationLayer/ApplicationLayer.csproj
+dotnet sln add IOCLayer/IOCLayer.csproj
+dotnet sln add PresentationLayer/PresentationLayer.csproj
 ```
