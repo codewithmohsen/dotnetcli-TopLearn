@@ -14,6 +14,7 @@ dotnet --list-sdks
 ```
 ### Set your project's sdk version
 Go to root of your project and run to create global.json file.
+```
 dotnet new globaljson
 ```
 open global.json and replace
