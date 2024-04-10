@@ -1,14 +1,15 @@
-## Video 07 Helper -
+## Video 07 Helper - ایجاد مدل و Repository مربوط به کاربران
+
 
 ### Create Entities
 
 #### USER
-##### Create class
+##### 1. Create class
 ```
 cd DomainLayer/Entities/
 dotnet new class --name User
 ```
-#### Update class
+#### 2. Update class
 open User.cs and updte
 ```
 namespace DomainLayer;
@@ -41,4 +42,38 @@ public class User
     public string UserName { get; set; }
 }
 ```
-##### Declare in Data/Context/AppDbContext.cs
+##### 3. Declare in Data/Context/AppDbContext.cs
+update 
+'''
+using DomainLayer;
+using Microsoft.EntityFrameworkCore;
+namespace DataLayer
+{
+    public class AppDbContext : DbContext
+    {
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
+        {
+        }
+    }
+}
+'''
+to
+'''
+using DomainLayer;
+using Microsoft.EntityFrameworkCore;
+namespace DataLayer
+{
+    public class AppDbContext : DbContext
+    {
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
+        {
+        }
+        #region Users
+        public DbSet<User> Users { get; set; }
+        #endregion
+    }
+}
+'''
+##### 4. Migrate Database
