@@ -127,5 +127,5 @@ dotnet sln add DomainLayer/DomainLayer.csproj
 dotnet sln add DataLayer/DataLayer.csproj
 dotnet sln add ApplicationLayer/ApplicationLayer.csproj
 dotnet sln add IOCLayer/IOCLayer.csproj
-dotnet sln add PresentationLayer/PresentationLayer.csproj
+dotnet sln add dotnet sln add PresentationLayer/app.csproj 
 ```
