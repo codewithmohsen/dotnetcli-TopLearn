@@ -94,7 +94,9 @@ Entity Framework Core .NET Command-line Tools 8.0.4
 ```
 Note: Use dotnet tool update --global dotnet-ef to update the global tools to the latest available version.
 #### _lets continue
+for here defalut project is DataLayer so:
 ```
+cd DataLayer
 dotnet ef migrations add addUserTable
 ```
 note: here addUserTable is the name of the migration.
