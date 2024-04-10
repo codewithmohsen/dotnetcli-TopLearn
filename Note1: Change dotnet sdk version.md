@@ -11,9 +11,9 @@ Goto https://dotnet.microsoft.com/en-us/download/dotnet and download version 7!
 dotnet --list-sdks
 7.0.407 [/usr/local/share/dotnet/sdk]
 8.0.203 [/usr/local/share/dotnet/sdk]
+```
 ### Set your project's sdk version
 Go to root of your project and run to create global.json file.
-```
 dotnet new globaljson
 ```
 open global.json and replace
@@ -37,6 +37,7 @@ now
 dotnet --version     
 7.0.407
 ```
+### Update your project
 and in all *.csproj files update this line
 ```
 </Project>
