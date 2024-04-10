@@ -4,7 +4,7 @@
 ### Create Entities
 
 #### USER
-##### 1. Create class
+#### 1. Create class
 ```
 cd DomainLayer/Entities/
 dotnet new class --name User
@@ -76,4 +76,25 @@ namespace DataLayer
     }
 }
 '''
-##### 4. Migrate Database
+##### 4. Adds a new migration
+
+##### Prerequisite (Install dotnet ef tool)
+reference: https://learn.microsoft.com/en-us/ef/core/cli/dotnet
+```
+dotnet tool install --global dotnet-ef
+dotnet ef
+                     _/\__       
+               ---==/    \\      
+         ___  ___   |.    \|\    
+        | __|| __|  |  )   \\\   
+        | _| | _|   \_/ |  //|\\ 
+        |___||_|       /   \\\/\\
+
+Entity Framework Core .NET Command-line Tools 8.0.4
+```
+Note: Use dotnet tool update --global dotnet-ef to update the global tools to the latest available version.
+#### _lets continue
+```
+dotnet ef migrations add addUserTable
+```
+note: here addUserTable is the name of the migration.
