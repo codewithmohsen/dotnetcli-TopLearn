@@ -37,4 +37,21 @@ now
 dotnet --version     
 7.0.407
 ```
+and in all *.csproj files update this line
+```
+</Project>
+  .
+  .
+  .
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    .
+    .
+    .
+  </PropertyGroup>
+  .
+  .
+  .
+</Project>
+```
 Done :)
