@@ -40,24 +40,46 @@ Project 'DataLayer' has the following package references
 ### in DataLayer/Context
 ```
 cd context
-dotnet new class --name appContext
+dotnet new class --name appDBContext
 ```
-update DataLayer/Context/appContext.csh
+update DataLayer/Context/appDBContext.cs
 from
 ```
 namespace DataLayer;
 
-public class appContext
+public class appDBContext
 {
 
 }
 ```
 to
 ```
-namespace DataLayer;
+using Microsoft.EntityFrameworkCore;
 
-public class appContext:DB
+namespace DataLayer
 {
-
+    public class AppDbContext : DbContext
+    {
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
+        {
+        }
+    }
 }
+```
+open PresentationLayer/Program.cs
+after
+```
+using DataLayer;
+using Microsoft.EntityFrameworkCore;
+var builder = WebApplication.CreateBuilder(args);
+```
+add bottom code
+```
+#region Add Db Context
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AppConnectionString"));
+});
+#endregion
 ```
