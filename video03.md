@@ -202,11 +202,6 @@ Time Elapsed 00:00:01.39
 for other times
 ```
 cd PresentationLayer
-dotnet rebuild
-```
-or
-```
-cd PresentationLayer
 dotnet clean
 dotnet build
 ```
