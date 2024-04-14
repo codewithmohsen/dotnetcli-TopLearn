@@ -35,6 +35,19 @@ Project 'DataLayer' has the following package references
    > Microsoft.EntityFrameworkCore.SqlServer      8.0.3       8.0.3   
    > Microsoft.EntityFrameworkCore.Tools          8.0.3       8.0.3
 ```
+### in /PresentationLayer/
+```
+dotnet add package Microsoft.EntityFrameworkCore.Design
+```
+now check installed package in current folder
+```
+dotnet list package                                              took 23s
+Project 'app' has the following package references
+   [net8.0]: 
+   Top-level Package                           Requested   Resolved
+   > Microsoft.EntityFrameworkCore.Design      8.0.4       8.0.4  
+```
+
 ### in /DataLayer/Context/
 ```
 dotnet new class --name appDBContext
