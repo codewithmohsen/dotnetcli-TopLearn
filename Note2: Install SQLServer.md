@@ -27,8 +27,10 @@ https://azure.microsoft.com/en-us/products/data-studio
 
 ### 7. Connect Server
 Azure Data Studio > Create a Connection >
+```
   server: localhost
   authentication type: SQL login
   user name: SA
   password: <YourStrong@Passw0rd>
+```
 Connect!
