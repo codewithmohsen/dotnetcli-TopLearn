@@ -129,7 +129,7 @@ dotnet sln add ApplicationLayer/ApplicationLayer.csproj
 dotnet sln add IOCLayer/IOCLayer.csproj
 dotnet sln add dotnet sln add PresentationLayer/app.csproj 
 ```
-
+now *.sln file updated.
 ```
 dotnet sln list
 Project(s)
