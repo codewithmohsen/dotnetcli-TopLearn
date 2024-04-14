@@ -5,8 +5,17 @@ https://www.docker.com/products/docker-desktop/
 
 ### 2. Open Docker.dmg
 
-### 3. Update Setting
+### 3. "Another application changed your Desktop configurations"
+solution 1 by https://github.com/docker/for-mac/issues/6898
+
 > Docker > Setting > Advance > [ ] automaticly check configuration.
+
+solution 2 by ?
+
+```
+sudo ln -sf /Applications/Docker.app/Contents/Resources/bin/docker-credential-ecr-login /usr/local/bin/docker-credential-ecr-login
+```
+
 
 ### 4. Download SQL Server Image
 by https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker in terminal run:
