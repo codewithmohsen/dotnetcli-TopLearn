@@ -199,3 +199,12 @@ Build succeeded.
 
 Time Elapsed 00:00:01.39
 ```
+for other times
+```
+dotnet rebuild
+```
+or
+```
+dotnet clean
+dotnet build
+```
