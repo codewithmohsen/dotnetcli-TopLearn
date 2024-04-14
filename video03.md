@@ -174,4 +174,28 @@ DomainLayer/DomainLayer.csproj
 IOCLayer/IOCLayer.csproj
 PresentationLayer/app.csproj
 ```
-Now close and open vscode!
+### download all nuget packages it refrences if you used clone other projects here
+```
+cd ..
+dotnet restore
+```
+### build all projects once
+```
+cd PresentationLayer
+dotnet build
+
+MSBuild version 17.9.6+a4ecab324 for .NET
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  DomainLayer -> /Users/mohsen/pre canada ASP Core API/aspdotnetcoreapi/DomainLayer/bin/Debug/net8.0/DomainLayer.dll
+  DataLayer -> /Users/mohsen/pre canada ASP Core API/aspdotnetcoreapi/DataLayer/bin/Debug/net8.0/DataLayer.dll
+  ApplicationLayer -> /Users/mohsen/pre canada ASP Core API/aspdotnetcoreapi/ApplicationLayer/bin/Debug/net8.0/ApplicationLayer.dll
+  IOCLayer -> /Users/mohsen/pre canada ASP Core API/aspdotnetcoreapi/IOCLayer/bin/Debug/net8.0/IOCLayer.dll
+  app -> /Users/mohsen/pre canada ASP Core API/aspdotnetcoreapi/PresentationLayer/bin/Debug/net8.0/app.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.39
+```
