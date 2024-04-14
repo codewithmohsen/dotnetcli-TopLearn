@@ -36,6 +36,8 @@ Project 'DataLayer' has the following package references
    > Microsoft.EntityFrameworkCore.Tools          8.0.3       8.0.3
 ```
 ### in /PresentationLayer/
+1. install Microsoft.EntityFrameworkCore.Design package
+Visit https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/ to know installation cli.
 ```
 dotnet add package Microsoft.EntityFrameworkCore.Design
 ```
