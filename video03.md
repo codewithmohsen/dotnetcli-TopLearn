@@ -104,7 +104,7 @@ dotnet add DataLayer reference DomainLayer
 or
 ```
 cd DataLayer
-dotnet add reference DomainLayer
+dotnet add reference ../DomainLayer/DomainLayer.csproj
 ```
 #### 2. DataLayer needs ApplicationLayer as referende
 ```
@@ -114,7 +114,7 @@ dotnet add ApplicationLayer reference DataLayer
 or
 ```
 cd ApplicationLayer
-dotnet add reference DataLayer
+dotnet add reference ../DataLayer/DataLayer.csproj
 ```
 #### 3. IOCLayer needs ApplicationLayer as referende
 ```
@@ -124,7 +124,7 @@ dotnet add IOCLayer reference ApplicationLayer
 or
 ```
 cd IOCLayer
-dotnet add reference ApplicationLayer
+dotnet add reference ../ApplicationLayer/ApplicationLayer.csproj
 ```
 #### 4. PresentationLayer needs IOCLayer as referende
 ```
@@ -134,7 +134,7 @@ dotnet add PresentationLayer reference IOCLayer
 or
 ```
 cd PresentationLayer
-dotnet add reference IOCLayer
+dotnet add reference ../IOCLayer/IOCLayer.csproj
 ```
 ### Create Subfolder
 ```
