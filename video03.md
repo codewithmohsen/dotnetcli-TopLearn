@@ -129,4 +129,16 @@ dotnet sln add ApplicationLayer/ApplicationLayer.csproj
 dotnet sln add IOCLayer/IOCLayer.csproj
 dotnet sln add dotnet sln add PresentationLayer/app.csproj 
 ```
+
+```
+dotnet sln list
+Project(s)
+----------
+ApplicationLayer/ApplicationLayer.csproj
+aspdotnetcoreapi.csproj
+DataLayer/DataLayer.csproj
+DomainLayer/DomainLayer.csproj
+IOCLayer/IOCLayer.csproj
+PresentationLayer/app.csproj
+```
 Now close and open vscode!
