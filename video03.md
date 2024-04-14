@@ -96,12 +96,45 @@ dotnet new mvc --name app --output PresentationLayer
 ```
 
 ### Set Dependencies
-Presentation > IOC > Application> Data > Domain 
+Presentation > IOC > Application> Data > Domain
+#### 1. DataLayer needs DomainLayer as referende
 ```
 dotnet add DataLayer reference DomainLayer
+```
+or
+```
+cd DataLayer
+dotnet add reference DomainLayer
+```
+#### 2. DataLayer needs ApplicationLayer as referende
+```
+cd ..
 dotnet add ApplicationLayer reference DataLayer
-dotnet add IOC referenceLayer ApplicationLayer
+```
+or
+```
+cd ApplicationLayer
+dotnet add reference DataLayer
+```
+#### 3. IOCLayer needs ApplicationLayer as referende
+```
+cd ..
+dotnet add IOCLayer reference ApplicationLayer
+```
+or
+```
+cd IOCLayer
+dotnet add reference ApplicationLayer
+```
+#### 4. PresentationLayer needs IOCLayer as referende
+```
+cd ..
 dotnet add PresentationLayer reference IOCLayer
+```
+or
+```
+cd PresentationLayer
+dotnet add reference IOCLayer
 ```
 ### Create Subfolder
 ```
